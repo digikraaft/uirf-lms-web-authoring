@@ -13,6 +13,29 @@ const config = createConfig('webpack-prod', {
       constants: false,
     },
   },
+  module: {
+    rules: [
+      // Add a rule for Sass files if it's not already defined in the config
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader', // Injects CSS into the DOM
+          'css-loader',   // Resolves CSS imports
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                includePaths: [
+                  path.resolve(__dirname, 'node_modules'), // Ensure node_modules is included
+                  path.resolve(__dirname, 'node_modules/bootstrap/scss'), // Include Bootstrap SCSS
+                ],
+              },
+            },
+          },
+        ],
+      },
+    ],
+  },
 });
 
 module.exports = config;
