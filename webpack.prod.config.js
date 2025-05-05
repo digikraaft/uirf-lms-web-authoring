@@ -6,6 +6,7 @@ const config = createConfig('webpack-prod', {
     alias: {
       // Plugins can use 'CourseAuthoring' as an import alias for this app:
       CourseAuthoring: path.resolve(__dirname, 'src/'),
+      'vendor/rfs': path.resolve(__dirname, 'node_modules/rfs/scss'),
     },
     fallback: {
       fs: false,
