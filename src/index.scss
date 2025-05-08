@@ -163,3 +163,15 @@ a:hover{
 .item-card-header .item-card-header__title-btn {
   color: #0d1b2a;
 }
+
+.form-control:focus {
+  background-color: #fff;
+  border-color: #ff6f00;
+  box-shadow: 0 0 0 1px #ff6f00;
+  color: #454545;
+  outline: 0;
+}
+
+.form-control:hover {
+  border: 1px solid #ff6f00;
+}
