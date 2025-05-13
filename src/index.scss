@@ -33,6 +33,10 @@
 @import "group-configurations/GroupConfigurations";
 @import "optimizer-page/scan-results/ScanResults";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 // To apply the glow effect to the selected Section/Subsection, in the Course Outline
 div.row:has(> div > div.highlight) {
   animation: 5s glow;

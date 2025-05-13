@@ -15,6 +15,7 @@ import { fetchOnlyStudioHomeData } from './studio-home/data/thunks';
 import { getCourseAppsApiStatus } from './pages-and-resources/data/selectors';
 import { RequestStatus } from './data/constants';
 import Loading from './generic/Loading';
+import FooterSlot from '../src/plugin-slots/FooterSlot/CustomFooter';
 
 const CourseAuthoringPage = ({ courseId, children }) => {
   const dispatch = useDispatch();
@@ -66,7 +67,7 @@ const CourseAuthoringPage = ({ courseId, children }) => {
         )
         )}
       {children}
-      {!inProgress && !isEditor && <StudioFooterSlot />}
+      {!inProgress && !isEditor && <FooterSlot />}
     </div>
   );
 };

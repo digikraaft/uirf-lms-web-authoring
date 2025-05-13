@@ -25,6 +25,7 @@ import CreateNewCourseForm from './create-new-course-form';
 import messages from './messages';
 import { useStudioHome } from './hooks';
 import AlertMessage from '../generic/alert-message';
+import FooterSlot from '../plugin-slots/FooterSlot/CustomFooter';
 
 const StudioHome = () => {
   const intl = useIntl();
@@ -188,7 +189,8 @@ const StudioHome = () => {
           isQueryPending={anyQueryIsPending}
         />
       </div>
-      <StudioFooterSlot />
+      <FooterSlot />
+      {/*<StudioFooterSlot />*/}
     </>
   );
 };
