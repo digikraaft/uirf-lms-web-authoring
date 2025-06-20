@@ -67,8 +67,21 @@ const UnitCard = ({
     upstreamInfo,
   } = unit;
 
+  // const blockSyncData = useMemo(() => {
+  //   if (!upstreamInfo.readyToSync) {
+  //     return undefined;
+  //   }
+  //   return {
+  //     displayName,
+  //     downstreamBlockId: id,
+  //     upstreamBlockId: upstreamInfo.upstreamRef,
+  //     upstreamBlockVersionSynced: upstreamInfo.versionSynced,
+  //     isVertical: true,
+  //   };
+  // }, [upstreamInfo]);
+
   const blockSyncData = useMemo(() => {
-    if (!upstreamInfo.readyToSync) {
+    if (!upstreamInfo || !upstreamInfo.readyToSync) {
       return undefined;
     }
     return {
@@ -79,6 +92,7 @@ const UnitCard = ({
       isVertical: true,
     };
   }, [upstreamInfo]);
+
 
   const readOnly = isUnitReadOnly(unit);
 
@@ -218,7 +232,7 @@ const UnitCard = ({
             discussionsSettings={discussionsSettings}
             parentInfo={parentInfo}
             extraActionsComponent={extraActionsComponent}
-            readyToSync={upstreamInfo.readyToSync}
+            readyToSync={upstreamInfo?.readyToSync}
           />
           <div className="unit-card__content item-children" data-testid="unit-card__content">
             <XBlockStatus
