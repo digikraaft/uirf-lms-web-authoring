@@ -26,6 +26,8 @@ import messages from './messages';
 import { useStudioHome } from './hooks';
 import AlertMessage from '../generic/alert-message';
 
+import FooterSlot from '../../plugins/FooterSlot/CustomFooter';
+
 const StudioHome = () => {
   const intl = useIntl();
   const location = useLocation();
@@ -188,7 +190,7 @@ const StudioHome = () => {
           isQueryPending={anyQueryIsPending}
         />
       </div>
-      <StudioFooter />
+      <FooterSlot />
     </>
   );
 };
