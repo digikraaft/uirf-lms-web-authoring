@@ -1,0 +1,186 @@
+@import "~@edx/brand/paragon/fonts";
+@import "~@edx/brand/paragon/variables";
+@import "~@openedx/paragon/scss/core/core";
+@import "~@edx/brand/paragon/overrides";
+@import "~@edx/frontend-component-header/dist/index";
+@import "assets/scss/variables";
+@import "assets/scss/form";
+@import "assets/scss/utilities";
+@import "assets/scss/animations";
+@import "pages-and-resources/discussions/app-list/AppList";
+@import "advanced-settings/scss/AdvancedSettings";
+@import "grading-settings/scss/GradingSettings";
+@import "studio-home/scss/StudioHome";
+@import "generic/styles";
+@import "schedule-and-details/ScheduleAndDetails";
+@import "course-team/CourseTeam";
+@import "course-updates/CourseUpdates";
+@import "export-page/CourseExportPage";
+@import "import-page/CourseImportPage";
+@import "taxonomy";
+@import "library-authoring";
+@import "files-and-videos";
+@import "content-tags-drawer";
+@import "course-outline/CourseOutline";
+@import "course-unit/CourseUnit";
+@import "course-checklist/CourseChecklist";
+@import "textbooks/Textbooks";
+@import "content-tags-drawer/ContentTagsDropDownSelector";
+@import "content-tags-drawer/ContentTagsCollapsible";
+@import "search-modal";
+@import "search-manager";
+@import "certificates/scss/Certificates";
+@import "group-configurations/GroupConfigurations";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// To apply the glow effect to the selected Section/Subsection, in the Course Outline
+div.row:has(> div > div.highlight) {
+  animation: 5s glow;
+  animation-timing-function: cubic-bezier(1, 0, .72, .04);
+}
+
+// To apply the glow effect to the selected xblock, in the Unit Outline
+div.xblock-highlight {
+  animation: 5s glow;
+  animation-timing-function: cubic-bezier(1, 0, .72, .04);
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px 5px $primary-500;
+  }
+
+  100% {
+    box-shadow: unset;
+  }
+}
+
+body {
+  background-color: $light-200;
+
+  .editor-page {
+    background-color: $light-100;
+  }
+}
+
+mark {
+  padding: 0;
+}
+
+//**ASK4BG brand customizations **//
+.bg-primary{
+  background-color: #ff6f00 !important;
+  border-color: #ff6f00 !important;
+}
+
+.btn-outline-primary {
+  border-color: #ff6f00;
+  color: #565656;
+}
+.btn-icon.btn-icon-primary{
+  background-color: #0000;
+  color: #ff6f00;
+}
+
+//a:hover{
+//  color:#ff6f00 !important;
+//}
+
+.pgn__bubble.pgn__bubble-primary{
+  background-color: #ff6f00;
+  color: #fff;
+}
+
+.spinner-border{
+  border: 0.25em solid #ff6f00;
+}
+
+.btn-outline-primary:not(:disabled, .disabled):active, .btn-outline-primary:not(:disabled, .disabled).active, .show > .btn-outline-primary.dropdown-toggle{
+  border-color: #ff6f00;
+}
+
+.btn-outline-primary.focus::before, .btn-outline-primary:focus::before{
+  border: solid 2px #ff6f00;
+}
+
+.btn-icon.btn-icon-primary.hover, .btn-icon.btn-icon-primary:hover, .btn-icon.btn-icon-primary.active, .btn-icon.btn-icon-primary:active{
+  background-color: #ff6f00;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #ff6f00;
+  text-decoration: none;
+  background-color: #f4eee2;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  text-decoration: none;
+  background-color: #f4eee2;
+}
+
+.btn-primary {
+  color: #FFFFFF;
+  background-color: #ff6f00;
+  border-color: #f4eee2;
+}
+
+.btn-tertiary:hover {
+  color: #454545;
+  background-color: #f4eee2;
+  border-color: transparent;
+}
+
+.btn-primary:hover {
+  color: #ff6f00;
+  background-color: #f4eee2;
+  border-color: #ff6f00;
+}
+
+.btn-primary:not(:disabled,disabled):active, .btn-primary:not(:disabled, .disabled).active, .show > .btn-primary.dropdown-toggle {
+  color: #ff6f00;
+  background-color: #f4eee2;
+  border-color: #ff6f00;
+}
+
+.btn-outline-primary:not(:disabled, .disabled):active, .btn-outline-primary:not(:disabled, .disabled).active, .show > .btn-outline-primary.dropdown-toggle {
+  color: #ff6f00;
+  background-color: #f4eee2;
+}
+
+.btn-outline-primary:hover {
+  color: #ff6f00;
+  background-color: #f4eee2;
+  border-color: #ff6f00;
+}
+
+.btn-icon.btn-icon-primary.focus, .btn-icon.btn-icon-primary:focus {
+  outline: 2px transparent;
+  color: #f4eee2;
+  box-shadow: inset 0 0 0 2px #f4eee2;
+}
+
+.item-card-header .item-card-header__title-btn {
+  color: #0d1b2a;
+}
+
+.form-control:focus {
+  background-color: #fff;
+  border-color: #ff6f00;
+  box-shadow: 0 0 0 1px #ff6f00;
+  color: #454545;
+  outline: 0;
+}
+
+.form-control:hover {
+  border: 1px solid #ff6f00;
+}
+
+.btn-brand {
+  color: #FFFFFF;
+  background-color: #ff6f00;
+  border-color: #ff6f00;
+}
+
