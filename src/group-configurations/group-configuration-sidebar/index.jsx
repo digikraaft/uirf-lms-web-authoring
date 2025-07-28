@@ -34,14 +34,14 @@ const GroupConfigurationSidebar = ({
                 {text}
               </p>
             ))}
-            <Hyperlink
-              target="_blank"
-              showLaunchIcon={false}
-              href={urls[urlKey]}
-              className="mt-2 mb-3.5 sidebar-link"
-            >
-              {intl.formatMessage(messages.learnMoreBtn)}
-            </Hyperlink>
+            {/*<Hyperlink*/}
+            {/*  target="_blank"*/}
+            {/*  showLaunchIcon={false}*/}
+            {/*  href={urls[urlKey]}*/}
+            {/*  className="mt-2 mb-3.5 sidebar-link"*/}
+            {/*>*/}
+            {/*  {intl.formatMessage(messages.learnMoreBtn)}*/}
+            {/*</Hyperlink>*/}
             {idx !== sidebarData.length - 1 && <hr />}
           </Fragment>
         ))}

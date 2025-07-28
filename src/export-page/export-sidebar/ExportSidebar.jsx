@@ -36,7 +36,7 @@ const ExportSidebar = ({ intl, courseId }) => {
       <h4 className="help-sidebar-about-title">{intl.formatMessage(messages.openDownloadFile)}</h4>
       <p className="help-sidebar-about-descriptions">{intl.formatMessage(messages.openDownloadFileDescription)}</p>
       <hr />
-      <Hyperlink className="small" href={exportLearnMoreUrl} target="_blank" variant="outline-primary">{intl.formatMessage(messages.learnMoreButtonTitle)}</Hyperlink>
+      {/*<Hyperlink className="small" href={exportLearnMoreUrl} target="_blank" variant="outline-primary">{intl.formatMessage(messages.learnMoreButtonTitle)}</Hyperlink>*/}
     </HelpSidebar>
   );
 };

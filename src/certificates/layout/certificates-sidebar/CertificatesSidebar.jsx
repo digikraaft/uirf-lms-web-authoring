@@ -24,16 +24,16 @@ const CertificatesSidebar = ({ courseId }) => {
           isLast={id === getSidebarData({ messages, intl }).length - 1}
         />
       ))}
-      <Button
-        as={Hyperlink}
-        target="_blank"
-        showLaunchIcon={false}
-        size="sm"
-        href={learnMoreCertificates}
-        variant="outline-primary"
-      >
-        {intl.formatMessage(messages.learnMoreBtn)}
-      </Button>
+      {/*<Button*/}
+      {/*  as={Hyperlink}*/}
+      {/*  target="_blank"*/}
+      {/*  showLaunchIcon={false}*/}
+      {/*  size="sm"*/}
+      {/*  href={learnMoreCertificates}*/}
+      {/*  variant="outline-primary"*/}
+      {/*>*/}
+      {/*  {intl.formatMessage(messages.learnMoreBtn)}*/}
+      {/*</Button>*/}
     </HelpSidebar>
   );
 };

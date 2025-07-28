@@ -41,16 +41,16 @@ const OutlineSideBar = ({ courseId }) => {
             {descriptions.map((description) => (
               <p className="help-sidebar-about-descriptions" key={description}>{description}</p>
             ))}
-            {Boolean(link) && Boolean(link.href) && (
-              <Hyperlink
-                className="small"
-                destination={link.href}
-                target="_blank"
-                showLaunchIcon={false}
-              >
-                {link.text}
-              </Hyperlink>
-            )}
+            {/*{Boolean(link) && Boolean(link.href) && (*/}
+            {/*  <Hyperlink*/}
+            {/*    className="small"*/}
+            {/*    destination={link.href}*/}
+            {/*    target="_blank"*/}
+            {/*    showLaunchIcon={false}*/}
+            {/*  >*/}
+            {/*    {link.text}*/}
+            {/*  </Hyperlink>*/}
+            {/*)}*/}
             {!isLastSection && <hr className="my-3.5" />}
           </div>
         );

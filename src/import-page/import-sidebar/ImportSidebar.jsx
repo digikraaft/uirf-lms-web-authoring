@@ -38,13 +38,13 @@ const ImportSidebar = ({ intl, courseId }) => {
       <h4 className="help-sidebar-about-title">{intl.formatMessage(messages.warningTitle)}</h4>
       <p className="help-sidebar-about-descriptions">{intl.formatMessage(messages.warningDescription)}</p>
       <hr />
-      <Hyperlink
-        className="small"
-        href={importLearnMoreUrl}
-        target="_blank"
-      >
-        {intl.formatMessage(messages.learnMoreButtonTitle)}
-      </Hyperlink>
+      {/*<Hyperlink*/}
+      {/*  className="small"*/}
+      {/*  href={importLearnMoreUrl}*/}
+      {/*  target="_blank"*/}
+      {/*>*/}
+      {/*  {intl.formatMessage(messages.learnMoreButtonTitle)}*/}
+      {/*</Hyperlink>*/}
     </HelpSidebar>
   );
 };

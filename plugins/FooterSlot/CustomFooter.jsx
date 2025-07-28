@@ -21,15 +21,14 @@ const FooterSlot = () => (
             <h3 className="text-base lg:text-xl font-semibold text-white">Support</h3>
             <div className="mt-4 xl:mt-8 space-y-2 lg:space-y-6">
               <a href="#faqs" className="block w-max text-white">FAQ</a>
-              <a href="terms.html" className="block w-max text-white">Terms & Conditions</a>
-              <a href="privacy.html" className="block w-max text-white">Privacy</a>
+              <a href="https://ask4bg.org/terms-of-use" className="block w-max text-white">Terms & Conditions</a>
+              <a href="https://ask4bg.org/privacy-policy" className="block w-max text-white">Privacy</a>
             </div>
           </div>
           <div className="">
             <h3 className="text-base lg:text-xl font-semibold text-white">Social Media</h3>
             <div className="mt-4 xl:mt-8 space-y-2 lg:space-y-6">
-              <a href="https://www.facebook.com/profile.php?id=61575779381167" target="_blank"
-                 className="block w-max text-white">Facebook</a>
+              <a href="https://www.facebook.com/profile.php?id=61575779381167" target="_blank" className="block w-max text-white">Facebook</a>
               <a href="https://x.com/ask4bg" target="_blank" className="block w-max text-white">Twitter</a>
               <a href="https://www.instagram.com/ask4bg" target="_blank" className="block w-max text-white">Instagram</a>
             </div>

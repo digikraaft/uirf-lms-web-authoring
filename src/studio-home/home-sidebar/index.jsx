@@ -35,11 +35,11 @@ const HomeSidebar = () => {
       <p className="help-sidebar-about-descriptions">
         {intl.formatMessage(messages.aboutDescription, { studioShortName })}
       </p>
-      <HelpSidebarLink
-        as="span"
-        pathToPage={aboutHomeLink || ''}
-        title={intl.formatMessage(messages.studioHomeLinkToGettingStarted, { studioName })}
-      />
+      {/*<HelpSidebarLink*/}
+      {/*  as="span"*/}
+      {/*  pathToPage={aboutHomeLink || ''}*/}
+      {/*  title={intl.formatMessage(messages.studioHomeLinkToGettingStarted, { studioName })}*/}
+      {/*/>*/}
       {isShowMailToGetInstruction && (
         <>
           <hr />
